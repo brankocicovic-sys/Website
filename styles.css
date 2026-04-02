@@ -1081,6 +1081,10 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   animation: marquee-reverse 40s linear infinite;
 }
 
+.reviews__marquee:has(.review-card:hover) .reviews__track {
+  animation-play-state: paused;
+}
+
 @keyframes marquee-reverse {
   from { transform: translateX(-50%); }
   to   { transform: translateX(0); }

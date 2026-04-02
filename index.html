@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopView – All-in-one Software for Heavy-Duty Truck & Trailer Repair Shops</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       TOP NAVIGATION
+  ============================================================ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <!-- Full wordmark — visible when at top -->
+      <a href="#" class="nav__logo nav__logo--wordmark" aria-label="ShopView Home">
+        <img src="assets/logo+links.svg" width="161" height="30" alt="ShopView" />
+      </a>
+      <!-- Icon only — visible when scrolled -->
+      <a href="#" class="nav__logo nav__logo--icon" aria-label="ShopView Home">
+        <img src="assets/Logo compact.svg" width="34" height="34" alt="ShopView" />
+      </a>
+
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#" class="nav__link">Product <svg class="nav__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <span class="nav__divider">/</span>
+        <a href="#" class="nav__link">Solutions <svg class="nav__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <span class="nav__divider">/</span>
+        <a href="#" class="nav__link">Pricing</a>
+        <span class="nav__divider">/</span>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#" class="btn btn--ghost btn--sm">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+          Log In
+        </a>
+        <a href="#" class="btn btn--outline btn--sm nav__book-demo">Book a Demo</a>
+        <a href="#" class="btn btn--primary btn--sm">Start Free Trial</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline>
+          <source src="Website video.mov" type="video/mp4" />
+        </video>
+      </div>
+      <div class="container hero__content">
+        <h1 class="hero__title">
+          All-in-one software for heavy-duty truck &amp; trailer
+          <span class="hero__title-gradient">repair shops</span>
+        </h1>
+        <p class="hero__subtitle">
+          Capture more billable hours, eliminate paperwork chaos, and get paid faster.<br>
+          Built by shop owners for shop owners.
+        </p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--primary btn--lg">Start Free Trial</a>
+          <a href="#" class="btn btn--dark btn--lg">Contact Us</a>
+        </div>
+        <div class="hero__ratings">
+          <div class="rating-item">
+            <span class="rating-label">Capterra</span>
+            <span class="rating-score">5/5 ★</span>
+          </div>
+          <div class="rating-item">
+            <span class="rating-label">G2</span>
+            <span class="rating-score">5/5 ★</span>
+          </div>
+          <div class="rating-item">
+            <span class="rating-label">GetApp</span>
+            <span class="rating-score">5/5 ★</span>
+          </div>
+          <div class="rating-item">
+            <span class="rating-label">Software Advice</span>
+            <span class="rating-score">5/5 ★</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         APP DEMO / TABS
+    ============================================================ -->
+    <section class="app-demo">
+      <nav class="app-demo__tabs" aria-label="Feature tabs">
+        <button class="app-demo__tab app-demo__tab--active" data-tab="0">Work Orders<span class="tab-progress"></span></button>
+        <button class="app-demo__tab" data-tab="1">Schedule<span class="tab-progress"></span></button>
+        <button class="app-demo__tab" data-tab="2">Customers<span class="tab-progress"></span></button>
+        <button class="app-demo__tab" data-tab="3">Parts<span class="tab-progress"></span></button>
+        <button class="app-demo__tab" data-tab="4">Reports<span class="tab-progress"></span></button>
+      </nav>
+
+      <div class="app-demo__screen">
+        <div class="app-demo__screenshot" id="app-demo-screenshot">
+          <img
+            id="app-demo-img"
+            src="assets/figma/app-screenshot.png"
+            alt="ShopView Work Orders screen"
+            loading="lazy"
+          />
+          <div class="app-demo__fade" aria-hidden="true"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         TRUSTED
+    ============================================================ -->
+    <section class="trusted">
+      <p class="trusted__label">Trusted by Top Heavy-Duty Shops</p>
+      <div class="trusted__marquee" aria-hidden="true">
+        <div class="trusted__track">
+          <img src="assets/Mask group.png"   alt="Customer logo" />
+          <img src="assets/Mask group-1.png" alt="Customer logo" />
+          <img src="assets/Mask group-2.png" alt="Customer logo" />
+          <img src="assets/Mask group-3.png" alt="Customer logo" />
+          <img src="assets/Mask group-4.png" alt="Customer logo" />
+          <img src="assets/Mask group-5.png" alt="Customer logo" />
+          <!-- duplicate set for seamless loop -->
+          <img src="assets/Mask group.png"   alt="Customer logo" />
+          <img src="assets/Mask group-1.png" alt="Customer logo" />
+          <img src="assets/Mask group-2.png" alt="Customer logo" />
+          <img src="assets/Mask group-3.png" alt="Customer logo" />
+          <img src="assets/Mask group-4.png" alt="Customer logo" />
+          <img src="assets/Mask group-5.png" alt="Customer logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CASE STUDY
+    ============================================================ -->
+    <section class="case-study">
+      <div class="container">
+        <div class="case-study__card">
+
+          <!-- Top: info + media -->
+          <div class="case-study__top">
+
+            <!-- Left: text info -->
+            <div class="case-study__info">
+              <div class="case-study__header">
+                <span class="label case-study__label">Case Study</span>
+                <h2 class="case-study__title">Foothills Group: From Garage Startup to $20M+ Revenue</h2>
+                <a href="#" class="case-study__link">
+                  <span class="case-study__link-icon">
+                    <img src="assets/figma/arrow-right.svg" width="14" height="14" alt="" aria-hidden="true" />
+                  </span>
+                  Read full story
+                </a>
+              </div>
+              <p class="case-study__body">
+                With 4 locations, 100+ employees, and $20M+ in annual revenue, Foothills Group is one of Alberta's leading heavy-duty truck repair shops, and they run on ShopView.<br><br>
+                Before switching, they cycled through 4 legacy systems that slowed down their technicians and buried service advisors in admin. With ShopView, they streamlined everything.
+              </p>
+            </div>
+
+            <!-- Right: video media -->
+            <div class="case-study__media">
+              <img
+                src="assets/figma/case-study-glow.png"
+                alt="" aria-hidden="true"
+                class="case-study__media-glow"
+              />
+              <div class="case-study__video-wrap">
+                <iframe
+                  class="case-study__video-iframe"
+                  src="https://www.youtube.com/embed/lfY78Ts2b64"
+                  title="ShopView - Foothills Case Study"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+          </div><!-- /.case-study__top -->
+
+          <!-- Bottom: stats (inside the card) -->
+          <div class="case-study__stats">
+            <div class="stat stat--first">
+              <img src="assets/coins.svg" width="24" height="24" alt="" class="stat__icon" />
+              <p class="stat__value">$60k+</p>
+              <p class="stat__desc">Extra revenue per month</p>
+            </div>
+            <div class="stat">
+              <img src="assets/clock.svg" width="24" height="24" alt="" class="stat__icon" />
+              <p class="stat__value">1,5hrs</p>
+              <p class="stat__desc">Saved per Tech per Day</p>
+            </div>
+            <div class="stat stat--last">
+              <img src="assets/speed.svg" width="24" height="24" alt="" class="stat__icon" />
+              <p class="stat__value">75%</p>
+              <p class="stat__desc">Faster Work Order Creation</p>
+            </div>
+          </div>
+
+        </div><!-- /.case-study__card -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURES (3 cards)
+    ============================================================ -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features__header">
+          <div class="features__header-text">
+            <span class="label">Features</span>
+            <h2 class="features__title">The Most Powerful Way to Make Your Shop More Profitable</h2>
+            <p class="features__subtitle">ShopView's heavy truck and trailer repair software boosts technician productivity and billed time to help grow your heavy duty shop's revenue by 20%+.</p>
+          </div>
+          <a href="#" class="btn btn--outline btn--md">See all features</a>
+        </div>
+        <div class="feature-cards">
+          <div class="feature-card">
+            <svg class="feature-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Built for speed</h3>
+              <p class="feature-card__desc">Get things done 30% faster than other platforms. Less time on computers, more time making money.</p>
+            </div>
+          </div>
+          <div class="feature-card feature-card--mid">
+            <svg class="feature-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="15" y2="11"/></svg>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Instant Invoicing</h3>
+              <p class="feature-card__desc">Convert completed jobs to invoices in seconds. No more waiting weeks to get paid for work already done.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <svg class="feature-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div class="feature-card__body">
+              <h3 class="feature-card__title">Learn it in Minutes</h3>
+              <p class="feature-card__desc">Your techs will be using it day one. No training manuals, no IT department required.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WORK ORDER FEATURE HIGHLIGHT
+    ============================================================ -->
+    <section class="wo-feature">
+      <div class="container">
+        <div class="wo-feature__outer">
+        <div class="wo-feature__grid">
+
+          <!-- Left: text + chat bubble -->
+          <div class="wo-feature__left">
+            <div class="wo-feature__tabs">
+              <button class="wo-feature__tab wo-feature__tab--active" data-wo-tab="0">Work Orders</button>
+              <button class="wo-feature__tab" data-wo-tab="1">Schedule</button>
+              <button class="wo-feature__tab" data-wo-tab="2">Payments</button>
+            </div>
+
+            <div class="wo-feature__bottom">
+              <div class="wo-feature__bubble-wrap">
+                <div class="wo-feature__bubble">
+                  <p>"Why do work orders slow my shop down so much?"</p>
+                </div>
+                <img
+                  class="wo-feature__avatar"
+                  src="assets/figma/avatar-shop-owner.png"
+                  alt="Shop owner"
+                />
+              </div>
+
+              <div class="wo-feature__text">
+                <h2 class="wo-feature__title">The Industry's Fastest Work Order Build-Out</h2>
+                <p class="wo-feature__desc">Create a fully detailed work order or estimate in under 2 minutes. Faster build outs mean faster profits.</p>
+                <a href="#" class="wo-feature__link">
+                  <span class="wo-feature__link-icon">
+                    <img src="assets/figma/arrow-right.svg" width="14" height="14" alt="" aria-hidden="true" />
+                  </span>
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: app UI mockup -->
+          <div class="wo-feature__right">
+            <div class="wo-feature__card">
+              <img
+                class="wo-feature__bg-ui"
+                src="assets/workorder image.svg"
+                alt="Work order interface"
+              />
+            </div>
+          </div>
+
+        </div>
+        </div><!-- /.wo-feature__outer -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REVIEWS / TESTIMONIALS MARQUEE
+    ============================================================ -->
+    <section class="reviews">
+      <div class="reviews__header">
+        <span class="reviews__label">Testimonials</span>
+        <h2 class="reviews__title">What Real Shops Are Saying</h2>
+      </div>
+
+      <div class="reviews__rows">
+
+        <!-- Row 1 — right to left -->
+        <div class="reviews__marquee">
+          <div class="reviews__track">
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-robert-fox.png" alt="Robert Fox" />
+                  <div><p class="review-card__name">Robert Fox</p><p class="review-card__role">Parts Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-wade-warren.png" alt="Wade Warren" />
+                  <div><p class="review-card__name">Wade Warren</p><p class="review-card__role">Parts Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">It saves me time, makes my workflow smoother, and has really boosted our productivity in the shop.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-kristin-watson.png" alt="Kristin Watson" />
+                  <div><p class="review-card__name">Kristin Watson</p><p class="review-card__role">Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">I find ShopView easy to navigate through work orders.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-leslie-alexander.png" alt="Leslie Alexander" />
+                  <div><p class="review-card__name">Leslie Alexander</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Software Advice.svg" alt="Software Advice" />
+              </div>
+              <p class="review-card__text">Makes tracking times for payroll a breeze.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-cameron-williamson.png" alt="Cameron Williamson" />
+                  <div><p class="review-card__name">Cameron Williamson</p><p class="review-card__role">Part Specialist</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <!-- duplicate set for seamless loop -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-robert-fox.png" alt="Robert Fox" />
+                  <div><p class="review-card__name">Robert Fox</p><p class="review-card__role">Parts Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-wade-warren.png" alt="Wade Warren" />
+                  <div><p class="review-card__name">Wade Warren</p><p class="review-card__role">Parts Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">It saves me time, makes my workflow smoother, and has really boosted our productivity in the shop.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-kristin-watson.png" alt="Kristin Watson" />
+                  <div><p class="review-card__name">Kristin Watson</p><p class="review-card__role">Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">I find ShopView easy to navigate through work orders.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-leslie-alexander.png" alt="Leslie Alexander" />
+                  <div><p class="review-card__name">Leslie Alexander</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Software Advice.svg" alt="Software Advice" />
+              </div>
+              <p class="review-card__text">Makes tracking times for payroll a breeze.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-cameron-williamson.png" alt="Cameron Williamson" />
+                  <div><p class="review-card__name">Cameron Williamson</p><p class="review-card__role">Part Specialist</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 — left to right (reverse) -->
+        <div class="reviews__marquee">
+          <div class="reviews__track reviews__track--reverse">
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-darrell-steward.png" alt="Darrell Steward" />
+                  <div><p class="review-card__name">Darrell Steward</p><p class="review-card__role">Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-darlene-robertson.png" alt="Darlene Robertson" />
+                  <div><p class="review-card__name">Darlene Robertson</p><p class="review-card__role">General Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">Their support team is amazing; they respond quickly and genuinely care about helping. I also love that they listen to feedback and keep improving the software.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-jerome-bell.png" alt="Jerome Bell" />
+                  <div><p class="review-card__name">Jerome Bell</p><p class="review-card__role">Administrator</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Software Advice.svg" alt="Software Advice" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-olivia-rhye.png" alt="Olivia Rhye" />
+                  <div><p class="review-card__name">Olivia Rhye</p><p class="review-card__role">Engineer</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">From setting up work orders to adding parts, managing inventory with the ability to cycle count to keep inventory up to date, and managing tech times and payroll timesheets.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-cody-fisher.png" alt="Cody Fisher" />
+                  <div><p class="review-card__name">Cody Fisher</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-jacob-jones.png" alt="Jacob Jones" />
+                  <div><p class="review-card__name">Jacob Jones</p><p class="review-card__role">Foreman</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Software Advice.svg" alt="Software Advice" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <!-- duplicate set for seamless loop -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-darrell-steward.png" alt="Darrell Steward" />
+                  <div><p class="review-card__name">Darrell Steward</p><p class="review-card__role">Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-darlene-robertson.png" alt="Darlene Robertson" />
+                  <div><p class="review-card__name">Darlene Robertson</p><p class="review-card__role">General Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">Their support team is amazing; they respond quickly and genuinely care about helping. I also love that they listen to feedback and keep improving the software.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-jerome-bell.png" alt="Jerome Bell" />
+                  <div><p class="review-card__name">Jerome Bell</p><p class="review-card__role">Administrator</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Software Advice.svg" alt="Software Advice" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-olivia-rhye.png" alt="Olivia Rhye" />
+                  <div><p class="review-card__name">Olivia Rhye</p><p class="review-card__role">Engineer</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">From setting up work orders to adding parts, managing inventory with the ability to cycle count to keep inventory up to date, and managing tech times and payroll timesheets.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-cody-fisher.png" alt="Cody Fisher" />
+                  <div><p class="review-card__name">Cody Fisher</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-jacob-jones.png" alt="Jacob Jones" />
+                  <div><p class="review-card__name">Jacob Jones</p><p class="review-card__role">Foreman</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Software Advice.svg" alt="Software Advice" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 — right to left -->
+        <div class="reviews__marquee">
+          <div class="reviews__track">
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-marvin-mckinney.png" alt="Marvin McKinney" />
+                  <div><p class="review-card__name">Marvin McKinney</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-theresa-webb.png" alt="Theresa Webb" />
+                  <div><p class="review-card__name">Theresa Webb</p><p class="review-card__role">Administrator</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">It saves me time, makes my workflow smoother, and has really boosted our productivity in the shop.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-guy-hawkins.png" alt="Guy Hawkins" />
+                  <div><p class="review-card__name">Guy Hawkins</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">The greatest appreciation that I have for ShopView stems from its modern aesthetic and curb appeal.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-arlene-mccoy.png" alt="Arlene McCoy" />
+                  <div><p class="review-card__name">Arlene McCoy</p><p class="review-card__role">Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">Unlike other software that I have utilized in the past, there is not a hodgepodge of unnecessary information or gimmicky hyperlinks to lead you astray.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-devon-lane.png" alt="Devon Lane" />
+                  <div><p class="review-card__name">Devon Lane</p><p class="review-card__role">General Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">Makes tracking times for payroll a breeze.</p>
+            </div>
+            <!-- duplicate set for seamless loop -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-marvin-mckinney.png" alt="Marvin McKinney" />
+                  <div><p class="review-card__name">Marvin McKinney</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/Group.svg" alt="G2" />
+              </div>
+              <p class="review-card__text">ShopView allows us to focus on getting the job done. As a technician, I love that I have the freedom to build jobs and switch between tasks without needing help from admin.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-theresa-webb.png" alt="Theresa Webb" />
+                  <div><p class="review-card__name">Theresa Webb</p><p class="review-card__role">Administrator</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">It saves me time, makes my workflow smoother, and has really boosted our productivity in the shop.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-guy-hawkins.png" alt="Guy Hawkins" />
+                  <div><p class="review-card__name">Guy Hawkins</p><p class="review-card__role">Technician</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">The greatest appreciation that I have for ShopView stems from its modern aesthetic and curb appeal.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-arlene-mccoy.png" alt="Arlene McCoy" />
+                  <div><p class="review-card__name">Arlene McCoy</p><p class="review-card__role">Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/capterra.svg" alt="Capterra" />
+              </div>
+              <p class="review-card__text">Unlike other software that I have utilized in the past, there is not a hodgepodge of unnecessary information or gimmicky hyperlinks to lead you astray.</p>
+            </div>
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__person">
+                  <img class="review-card__avatar" src="assets/figma/avatar-devon-lane.png" alt="Devon Lane" />
+                  <div><p class="review-card__name">Devon Lane</p><p class="review-card__role">General Manager</p></div>
+                </div>
+                <img class="review-card__platform-logo" src="assets/GetApp.svg" alt="GetApp" />
+              </div>
+              <p class="review-card__text">Makes tracking times for payroll a breeze.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         USE CASES
+    ============================================================ -->
+    <section class="use-cases" id="solutions">
+      <div class="container">
+        <div class="section-heading">
+          <span class="label">Why You Need Us</span>
+          <h2 class="section-heading__title">Making Life Easier for Everyone in Your Shop</h2>
+          <p class="section-heading__subtitle">Optimize Every Role in Your Shop with Smart Tools for Efficiency and Growth.</p>
+        </div>
+        <div class="use-cases__grid">
+          <div class="use-cases__tabs">
+            <button class="use-case-tab use-case-tab--active" data-role="owner">Shop Owner <span class="use-case-tab__arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></button>
+            <button class="use-case-tab" data-role="manager">Service Manager <span class="use-case-tab__arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></button>
+            <button class="use-case-tab" data-role="tech">Technician / Foreman <span class="use-case-tab__arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></button>
+            <button class="use-case-tab" data-role="parts">Parts Manager <span class="use-case-tab__arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></button>
+            <button class="use-case-tab" data-role="admin">Shop Administrator <span class="use-case-tab__arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></button>
+          </div>
+          <div class="use-cases__detail">
+            <div class="use-cases__photo">
+              <img
+                src="assets/figma/photo-shop-owner.png"
+                alt="Shop Owner"
+                loading="lazy"
+              />
+            </div>
+            <div class="use-cases__content">
+              <div class="use-cases__role-header">
+                <div class="use-cases__role-icon">
+                  <img src="assets/Union.svg" alt="" />
+                </div>
+                <h3 class="use-cases__role-name">Shop Owner</h3>
+              </div>
+              <ul class="use-cases__benefits">
+                <li class="benefit">
+                  <svg class="benefit__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 15.5 10"/></svg>
+                  <div>
+                    <h4 class="benefit__title">Keep track of everything</h4>
+                    <p class="benefit__desc">Staff, billing, workflows, and more all-in-one place to ensure your shop runs at maximum efficiency.</p>
+                  </div>
+                </li>
+                <li class="benefit">
+                  <svg class="benefit__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 15.5 10"/></svg>
+                  <div>
+                    <h4 class="benefit__title">Grow &amp; Modernize</h4>
+                    <p class="benefit__desc">Drive business growth by becoming a market-leading shop using the latest technology.</p>
+                  </div>
+                </li>
+                <li class="benefit">
+                  <svg class="benefit__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 15.5 10"/></svg>
+                  <div>
+                    <h4 class="benefit__title">Maximize profits</h4>
+                    <p class="benefit__desc">Increase billable hours per technician with clear utilization and productivity stats.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIAL
+    ============================================================ -->
+    <section class="testimonial">
+      <div class="container">
+        <blockquote class="testimonial__quote">
+          <span class="testimonial__line testimonial__line--1">"ShopView is easy to navigate and makes the</span>
+          <span class="testimonial__line testimonial__line--2">whole workorder to invoicing process seamless"</span>
+        </blockquote>
+        <div class="testimonial__author">
+          <p class="testimonial__name">Jason Cooper</p>
+          <p class="testimonial__role">Parts Technician</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RESULTS / STATS
+    ============================================================ -->
+    <section class="results" id="pricing">
+      <div class="container">
+        <div class="results__header">
+          <span class="label">What you get</span>
+          <h2 class="results__title">The Results You Can Expect with ShopView</h2>
+          <p class="results__subtitle">Designed to reduce friction, improve visibility, and keep work moving.</p>
+        </div>
+        <div class="results__cards">
+          <div class="results__card-row" aria-hidden="true"></div>
+          <div class="results__card-body">
+            <div class="result-card">
+              <svg class="result-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <p class="result-card__value">1.5 Hrs</p>
+              <p class="result-card__desc">The average daily time saved on data entry and navigation per user</p>
+            </div>
+            <div class="result-card result-card--mid">
+              <svg class="result-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 16 11 18 15 14"/></svg>
+              <p class="result-card__value">$5,200</p>
+              <p class="result-card__desc">The average extra billable tech time per month</p>
+            </div>
+            <div class="result-card">
+              <svg class="result-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#257cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              <p class="result-card__value">$111,300</p>
+              <p class="result-card__desc">The average total annual revenue increase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         START FREE TRIAL CTA
+    ============================================================ -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <span class="label">Ready When You Are</span>
+          <h2 class="cta-box__title">Run your shop faster and more efficiently with ShopView.</h2>
+          <p class="cta-box__subtitle">Trusted by repair shops to reduce downtime and stay in control.</p>
+          <div class="cta-box__actions">
+            <a href="#" class="btn btn--primary btn--lg">Start Free Trial</a>
+            <a href="#" class="btn btn--dark btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo+links.svg" width="161" height="30" alt="ShopView" />
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter/X">
+            <img src="assets/figma/icon-twitter-x.svg" width="23" height="24" alt="X" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="assets/figma/icon-linkedin.svg" width="24" height="24" alt="LinkedIn" />
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/figma/icon-facebook.svg" width="24" height="24" alt="Facebook" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__columns">
+        <div class="footer__contact">
+          <p>Have questions about how ShopView can transform your heavy duty repair shop?</p>
+          <p>Our team is ready to assist. Whether you need more information, a personalized demo, or guidance on getting started, we're just a message away.</p>
+          <div class="footer__contact-info">
+            <p>+1-587-438-9423</p>
+            <p>sales@shopview.com</p>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-heading">PRODUCTS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Work Orders</a></li>
+            <li><a href="#">Estimates &amp; Invoices</a></li>
+            <li><a href="#">Parts Inventory</a></li>
+            <li><a href="#">Scheduling</a></li>
+            <li><a href="#">Reporting</a></li>
+            <li><a href="#">Time Clock</a></li>
+            <li><a href="#">Website Creation</a></li>
+            <li><a href="#">Lead Generation</a></li>
+            <li><a href="#">ShopCoach AI</a></li>
+            <li><a href="#">Labor Time Guide</a></li>
+            <li><a href="#">ShopPay</a></li>
+            <li><a href="#">Customer Portal</a></li>
+            <li><a href="#">Accounting &amp; Bookkeeping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-heading">SOLUTIONS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Diesel Truck Repair</a></li>
+            <li><a href="#">Agricultural Equipment</a></li>
+            <li><a href="#">Construction Fleet</a></li>
+            <li><a href="#">Independent Repair</a></li>
+            <li><a href="#">Heavy Equipment</a></li>
+            <li><a href="#">Fire Truck &amp; Ambulance</a></li>
+            <li><a href="#">Tow Truck</a></li>
+            <li><a href="#">Multi-Location Repair</a></li>
+            <li><a href="#">Fleet Maintenance</a></li>
+            <li><a href="#">Truck &amp; Trailer</a></li>
+            <li><a href="#">Mobile Equipment</a></li>
+            <li><a href="#">Mechanic Computer Program</a></li>
+            <li><a href="#">RV Repair</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-heading">COMPARE</h4>
+          <ul class="footer__links">
+            <li><a href="#">ShopView vs Fullbay</a></li>
+            <li><a href="#">ShopView vs Shopmonkey</a></li>
+            <li><a href="#">ShopView vs ShopBoss</a></li>
+            <li><a href="#">ShopView vs Mitchell1</a></li>
+            <li><a href="#">ShopView vs Tekmetric</a></li>
+            <li><a href="#">ShopView vs Easy Truck Shop</a></li>
+            <li><a href="#">ShopView vs MaintainX</a></li>
+            <li><a href="#">ShopView vs Gem-Car</a></li>
+            <li><a href="#">ShopView vs Autoleap</a></li>
+            <li><a href="#">ShopView vs QuickBooks</a></li>
+            <li><a href="#">ShopView vs Other Solutions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 ShopView: Heavy-Duty Truck Repair Software. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <button class="footer__back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            Back to Top
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer__wordmark" aria-hidden="true">
+        <img src="assets/vector.svg" alt="" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
